@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>PlayfulOuting</title>
+    <style>
+        section {
+            margin: 20px;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+
+        }
+
+        .product-card h3 {
+            color: #333;
+        }
+
+        .product-card p {
+            color: #666;
+            height: 50px;
+            overflow: hidden;
+        }
+
+        footer {
+            background-color: #4ca3af;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        #logo {
+            width: 150px;
+            border-radius: 25%;
+        }
+
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            width: 100%;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 100%;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        button {
+            border-radius: 15%;
+            background-color: #34d8ee;
+        }
+
+        a {
+            color: #f1f1f1;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: justify;
+        }
+
+        .cover {
+            background-image: url('../Picture/twister.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    </div>
+    <!-- Add icons and search bar to the top-right -->
+    <div class="myNavRight">
+        <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+    <header>
+        <div class="myNav">
+            <div class="nav-links">
+                <a href="../HomePage.html">Home Page</a>
+                <a href="../Categories.html">Categories</a>
+                <a href="../Register.html">Register</a>
+                <a href="../Aboutus.html">About Us</a>
+                <a href="../HomePage.html"><img src="../Picture/logo.png" id="logo"></a>
+            </div>
+
+            <!-- Icons moved inside .myNav -->
+            <div class="myNavRight">
+                <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <main>
+            <div class="container">
+                <div class="cover"></div>
+                <div class="content">
+
+                    <div class="content-body">
+                        <div class="pages">
+                            <span class="active"><b></b></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="black-label">
+                            <span class="title"><b>Twister</b></span>
+                            <p>Twister is a classic party game that involves flexibility, coordination, and a lot of
+                                laughs.
+                            </p>
+                            <h2>Here's how to play:</h2>
+                            <p>
+                            
+                            Ensure there's enough space around the mat for players to move. <br>
+                            <h4>The Spinner:</h4>
+                            Place the spinner within easy reach of the designated spinner (or referee).
+                            </p>
+                            <h3>Gameplay</h3>
+                            <p>
+                                <h4>The Spinner's Role:</h4>
+                                One person acts as the spinner (or referee). They spin the dial.
+                                The spinner calls out the body part and color that the dial lands on (e.g., "Right hand,
+                                red!").
+                                <h4>Player's Actions:</h4>
+                                All players must then attempt to place the called-out body part on a vacant circle of
+                                the called-out color.
+                                <h4>Elimination:</h4>
+                                A player is eliminated if:
+                                They fall or touch the mat with a knee or elbow.
+                                They can't reach a required circle.
+                                They lift a hand or foot from its circle, without announcing it to allow another limb to
+                                pass.
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer>
+        <p>© 2025 PlayfulOuting | Contact us via email: PlayfulOuting@example.com</p>
+    </footer>
+</body>
+
+</html>

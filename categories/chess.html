@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>PlayfulOuting</title>
+    <style>
+        section {
+            margin: 20px;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+
+        }
+
+        .product-card h3 {
+            color: #333;
+        }
+
+        .product-card p {
+            color: #666;
+            height: 50px;
+            overflow: hidden;
+        }
+
+        footer {
+            background-color: #4ca3af;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        #logo {
+            width: 150px;
+            border-radius: 25%;
+        }
+
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            width: 100%;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 100%;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        button {
+            border-radius: 15%;
+            background-color: #34d8ee;
+        }
+
+        a {
+            color: #f1f1f1;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: justify;
+        }
+
+        .cover {
+            background-image: url('../Picture/chess.webp');
+        }
+        .black-label p{
+            
+            font-size: medium;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    </div>
+    <!-- Add icons and search bar to the top-right -->
+    <div class="myNavRight">
+        <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+    <header>
+        <div class="myNav">
+            <div class="nav-links">
+                <a href="../HomePage.html">Home Page</a>
+                <a href="../Categories.html">Categories</a>
+                <a href="../Register.html">Register</a>
+                <a href="../Aboutus.html">About Us</a>
+                <a href="../HomePage.html"><img src="../Picture/logo.png" id="logo"></a>
+            </div>
+
+
+            <!-- Icons moved inside .myNav -->
+            <div class="myNavRight">
+                <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <main>
+            <div class="container">
+                <div class="cover"></div>
+                <div class="content">
+
+                    <div class="content-body">
+                        <div class="pages">
+                            <span class="active"><b></b></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="black-label">
+                            <span class="title"><b>Chess</b></span>
+                            <p>Chess is a classic and highly popular board game that involves strategic thinking and
+                                tactical maneuvering
+                            </p>
+                            <h3>• A Strategy Board Game: </h3>
+                            <p>Chess is played on a square board with 64 squares, arranged in an 8x8 grid.
+                                It's a game of pure skill, with no element of chance. Two players compete against each
+                                other, each controlling 16 pieces. </p>
+                            <h3>The Objective: </h3>The ultimate goal is to "checkmate" the opponent's king, meaning the
+                            king is under immediate attack (in "check") and there's no way to escape.
+                            <h3>The Pieces: </h3>
+                            <p>One king,
+                                One queen,
+                                Two rooks,
+                                Two knights,
+                                Two bishops,
+                                Eight pawns,
+                                Each piece has its own unique way of moving.
+                            </p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </section>
+    <a href="#drdn"><img src="./Picture//scroll up arrow.png" alt=""
+            style="position: fixed; right: 0;top: 83%; width: 60px;"></a>
+    <footer>
+        <p>© 2025 PlayfulOuting | Contact us via email: PlayfulOuting@example.com</p>
+    </footer>
+</body>
+
+</html>

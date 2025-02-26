@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>PlayfulOuting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px auto;
+            max-width: 1100px;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .cover img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            position: relative;
+            bottom: 300px;
+            left: 90px;
+        }
+
+
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        .btn-book {
+            display: block;
+            width: fit-content;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #4ca3af;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        #logo {
+            position: relative;
+            width: 150px;
+            border-radius: 15%;
+            right: 150px;
+        }
+
+        #logo:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myNavRight">
+        <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+    <header>
+        <div class="myNav">
+            <div class="nav-links">
+                <a href="../HomePage.html">Home Page</a>
+                <a href="../Categories.html">Categories</a>
+                <a href="../Register.html">Register</a>
+                <a href="../Aboutus.html">About Us</a>
+
+            </div>
+            <a href="./HomePage.html">
+                <img src="../Picture/logo.png" id="logo" alt="Logo">
+            </a>
+
+            <div class="myNavRight">
+                <a href="#" class="icon-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="icon-link" title="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="content">
+                <h1>Chợ nổi Cái Răng – Cai Rang Floating Market</h1>
+                <p>Chợ nổi Cái Răng (Cai Rang Floating Market) is a wholesale market specializing in fruits and
+                    agricultural products of the Mekong Delta region, located in Cai Rang district, Can Tho city. It is
+                    one of the largest and most famous floating markets in the Mekong Delta. The market operates very
+                    early, usually from 3 am to 9 am.
+                <h3>Wholesale Trade:</h3>
+                <p>The market primarily functions as a wholesale hub, attracting traders from across the Mekong Delta
+                    and beyond. <br>
+                    The main goods traded are fresh produce, including a wide variety of fruits (mangoes, pineapples,
+                    oranges, etc.), vegetables, and other agricultural products.</p>
+                <h3>Bartering and Exchange:</h3>
+                <p>The market is a spectacle of countless boats, large and small, creating a lively and energetic
+                    atmosphere. <br>
+                    Vendors use a tall pole called a "cây bẹo" to display samples of their goods, making it easy for
+                    buyers to identify what's for sale. <br>
+                    Transactions happen directly on the boats, showcasing a unique aspect of the region's river culture.
+                </p>
+                <h2>Food and Services:</h2>
+                <p>
+                    Alongside trade, the market features boats offering breakfast options like "hủ tiếu" (noodle soup),
+                    "bún riêu" (crab noodle soup), and coffee. <br>
+                    Visitors can hire boats to explore the market, experience the local way of life, and savor regional
+                    specialties.
+                </p>
+                <h3>Tourism:</h3>
+                <p>Chợ nổi Cái Răng is a popular tourist destination, drawing both domestic and international visitors. <br>
+                    Tourists come to witness the unique floating market culture, enjoy the scenic river views, and purchase local products.</p>
+                <button class="btn-book" onclick="alert(' Successfull! Enjoy your tour! ')">Book Now</button>
+            </div>
+            <div class="cover">
+                <img src="../Picture/MarketCaiRang.jpg" alt="Chợ nổi Cái Răng">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 PlayfulOuting | Liên hệ qua email: PlayfulOuting@example.com</p>
+    </footer>
+</body>
+
+</html>

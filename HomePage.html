@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>PlayfulOuting</title>
+    <style>
+        section {
+            margin: 20px;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            color: #333;
+        }
+
+        .product-card p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #4ca3af;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .myNav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: red;
+        }
+
+        #logo {
+            position: relative;
+            width: 150px;
+            border-radius: 25%;
+            transition: transform 0.3s;
+            right: 150px;
+        }
+
+        #logo:hover {
+            transform: scale(1.1);
+        }
+
+        .myNavRight {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon-link {
+            color: white;
+            font-size: 20px;
+            margin-left: 15px;
+            transition: transform 0.3s;
+        }
+
+        .icon-link:hover {
+            transform: scale(1.2);
+            color: #f8f9fa;
+        }
+
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            padding: 0px;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #218838;
+        }
+
+        .filter-container label {
+            font-size: 16px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        #region-select {
+            padding: 8px 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #region-select:hover {
+            border-color: #4ca3af;
+        }
+
+        .details {
+            display: none;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .more-btn {
+            background-color: #4ca3af;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .products-heading {
+            background-color: #218838;
+            color: white;
+            height: 60px;
+            border-radius: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="myNavRight">
+        <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+    <header>
+        <div class="myNav">
+            <div class="nav-links">
+                <a href="#HomePage">Home Page</a>
+                <a href="./Categories.html">Categories</a>
+                <a href="./Register.html">Register</a>
+                <a href="./Aboutus.html">About Us</a>
+
+            </div>
+            <a href="./HomePage.html">
+                <img src="./Picture/logo.png" id="logo" alt="Logo">
+            </a>
+
+            <div class="myNavRight">
+                <a href="#" class="icon-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="icon-link" title="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Picture/HoiAn.jpg" alt="Gogreen" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./Picture/HaNoi.jpg" alt="..." class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./Picture/VinhHaLong.jpg" alt="..." class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./Picture/PhongNhaKeBang.jpg" alt="vịnh hạ long" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./Picture/Hochiminh.jpg" alt="vũng tàu" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./Picture/DaLat.jpg" alt="Đà lạt" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./Picture/MuiNe.jpg" alt="Hcm" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./Picture/VungTau.jpg" alt="danang" class="d-block w-100">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- "Our Products" Heading -->
+    <div class="products-heading">
+        <h2>OUR PRODUCTS</h2>
+    </div>
+
+    <div class="filter-container">
+        <label for="region-select">Choose region:</label>
+        <select id="region-select">
+            <option value="all">All</option>
+            <option value="north">Northern</option>
+            <option value="central">Central</option>
+            <option value="south">Southern</option>
+        </select>
+    </div>
+
+
+    <section>
+        <div class="product">
+            <div class="product-card" data-region="north">
+                <img src="./Picture/VinhHaLong.jpg" alt="Ha Long Bay Travel">
+                <h3>Ha Long Bay Travel</h3>
+                <p>Experience the natural wonder.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Discover the beauty of Ha Long Bay, a UNESCO heritage site with stunning landscapes and cruises.
+                    </p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/vinhhalong.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="product-card" data-region="south">
+                <img src="./Picture/VungTau.jpg" alt="Vung Tau">
+                <h3>Vung Tau</h3>
+                <p>A coastal city with beautiful beaches and fresh seafood.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Explore the beautiful beaches and fresh seafood of Vung Tau, a popular coastal city.</p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/vungtau.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="product-card" data-region="south">
+                <img src="./Picture/DaLat.jpg" alt="Da Lat">
+                <h3>Da Lat</h3>
+                <p>The city of flowers with a cool climate all year round.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Discover the city of flowers with a cool climate all year round.</p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/dalat.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="product-card" data-region="north">
+                <img src="./Picture/TayBac.jpg" alt="Tay Bac">
+                <h3>Tay Bac</h3>
+                <p>An eco-tourism area with green forests and adventurous activities.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Explore the eco-tourism area with green forests and adventurous activities.</p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/taybac.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="product-card" data-region="central">
+                <img src="./Picture/ThanhDiaMySon.jpg" alt="My Son Sanctuary">
+                <h3>My Son Sanctuary</h3>
+                <p>A UNESCO World Heritage Site with unique Champa architecture.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Explore the unique Champa architecture of My Son Sanctuary, a UNESCO World Heritage Site.</p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/myson.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="product-card" data-region="central">
+                <img src="./Picture/NhaTrang.jpg" alt="Nha Trang">
+                <h3>Nha Trang</h3>
+                <p>A famous coastal city with stunning beaches.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Discover the famous coastal city with stunning beaches.</p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/nhatrang.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="product-card" data-region="south">
+                <img src="./Picture/ConDao.jpg" alt="Con Dao">
+                <h3>Con Dao</h3>
+                <p>A pristine island with beautiful beaches and rich history.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Explore the pristine island with beautiful beaches and rich history.</p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/condao.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="product-card" data-region="central">
+                <img src="./Picture/danang.jpg" alt="Da Nang">
+                <h3>Da Nang</h3>
+                <p>A vibrant coastal city with many famous attractions.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Discover the vibrant coastal city with many famous attractions.</p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/danang.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="product-card" data-region="south">
+                <img src="./Picture/Hcm.jpg" alt="HCM">
+                <h3>Ho Chi Minh</h3>
+                <p>The most crowded place in Vietnam.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Discover the dynamic metropolis of Ho Chi Minh City, renowned for its rich history, vibrant
+                        culture, and bustling nightlife..</p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/hcm.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="product-card" data-region="south">
+                <img src="./Picture/MarketCaiRang.jpg" alt="Cai Rang Floating Market">
+                <h3>Cai Rang Floating Market</h3>
+                <p>Experience the unique river culture.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Explore the unique river culture of the Cai Rang Floating Market.</p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/cairang.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="product-card" data-region="north">
+                <img src="./Picture/HaNoi.jpg" alt="Hanoi Travel">
+                <h3>Hanoi Travel</h3>
+                <p>Explore the thousand-year-old capital.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Hanoi is the capital of Vietnam, known for its centuries-old architecture and a rich culture with
+                        Southeast Asian, Chinese, and French influences.</p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/hanoi.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="product-card" data-region="central">
+                <img src="./Picture/HoiAn.jpg" alt="Hoi An Travel">
+                <h3>Hoi An Travel</h3>
+                <p>Discover the ancient town of Hoi An.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Discover the ancient town of Hoi An, a UNESCO World Heritage Site with well-preserved buildings
+                        and a unique blend of local and foreign influences.</p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/hoian.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="product-card" data-region="south">
+                <img src="./Picture/MuiNe.jpg" alt="Mui Ne Travel">
+                <h3>Mui Ne Travel</h3>
+                <p>A paradise of blue sea, white sand, and golden sunshine.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Discover the paradise of blue sea, white sand, and golden sunshine in Mui Ne.</p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/muine.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="product-card" data-region="north">
+                <img src="./Picture/VinhHaLong.jpg" alt="Ha Long Bay">
+                <h3>Ha Long Bay</h3>
+                <p>Explore the country's natural wonder.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Discover the beauty of Ha Long Bay, a UNESCO heritage site with stunning landscapes and cruises.
+                    </p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/vinhhalong.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="product-card" data-region="central">
+                <img src="./Picture/PhongNhaKeBang.jpg" alt="Phong Nha - Ke Bang Cave">
+                <h3>Phong Nha - Ke Bang Cave</h3>
+                <p>A natural wonder with magnificent caves.</p>
+                <p>Price: 500,000 VND</p>
+                <button class="more-btn">More</button>
+                <div class="details">
+                    <p>Explore the natural wonder of Phong Nha - Ke Bang Cave with magnificent caves.</p>
+                    <div class="button-group">
+                        <button class="booking-btn">Book</button>
+                        <a href="./galery/phongnhakebang.html">
+                            <button class="detail-btn">Detail</button>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("region-select").addEventListener("change", function () {
+            let selectedRegion = this.value;
+            let products = document.querySelectorAll(".product-card");
+
+            products.forEach(product => {
+                if (selectedRegion === "all" || product.getAttribute("data-region") === selectedRegion) {
+                    product.style.display = "block";
+                } else {
+                    product.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll(".more-btn").forEach(button => {
+            button.addEventListener("click", function () {
+                let details = this.nextElementSibling;
+                if (details.style.display === "block") {
+                    details.style.display = "none";
+                    this.textContent = "More";
+                } else {
+                    details.style.display = "block";
+                    this.textContent = "Less";
+                }
+            });
+        });
+
+        document.querySelectorAll(".booking-btn").forEach(button => {
+            button.addEventListener("click", function () {
+                alert("congratulation!");
+            });
+        });
+    </script>
+
+    <a href="#"><img src="./Picture//scroll up arrow.png" alt=""
+            style="position: fixed; right: 0;top: 83%; width: 60px;"></a>
+
+    <footer>
+        <p>© 2025 PlayfulOuting | Contact us via email: PlayfulOuting@example.com</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>PlayfulOuting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px auto;
+            max-width: 1100px;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .cover img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            position: relative;
+            bottom: 250px;
+            left: 90px;
+        }
+
+
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        .btn-book {
+            display: block;
+            width: fit-content;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #4ca3af;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        #logo {
+            position: relative;
+            width: 150px;
+            border-radius: 15%;
+            right: 150px;
+        }
+
+        #logo:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myNavRight">
+        <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="icon-link"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+    <header>
+        <div class="myNav">
+            <div class="nav-links">
+                <a href="../HomePage.html">Home Page</a>
+                <a href="../Categories.html">Categories</a>
+                <a href="../Register.html">Register</a>
+                <a href="../Aboutus.html">About Us</a>
+
+
+            </div>
+            <a href="./HomePage.html">
+                <img src="../Picture/logo.png" id="logo" alt="Logo">
+            </a>
+
+            <div class="myNavRight">
+                <a href="#" class="icon-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="icon-link" title="Shopping Cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="content">
+                <h1>Hanoi – The Thousand-Year-Old Capital of Culture</h1>
+                <p>Hanoi is the capital of Vietnam, famous for its ancient architectural works, distinctive culinary culture, and peaceful life.</p>
+                <h2>Featured Attractions:</h2>
+                <h3>Hoan Kiem Lake:</h3>
+                <p>The symbol of Hanoi, associated with the legend of King Le Loi returning the sword to the Golden Turtle.</p>
+                <h3>Temple of Literature – Imperial Academy:</h3>
+                <p>Vietnam's first university, preserving traditional cultural and educational values.</p>
+                <h3>Hanoi Old Quarter:</h3>
+                <p>An old quarter with narrow streets, ancient houses, and specialty dishes.</p>
+                <h2>Exciting Activities:</h2>
+                <h3>Enjoy Egg Coffee:</h3>
+                <p>A distinctive Hanoi beverage, loved by many.</p>
+                <h3>Watch Water Puppet Shows:</h3>
+                <p>A unique traditional art form of Vietnam.</p>
+                <h3>Stroll Around West Lake:</h3>
+                <p>Enjoy the open space and admire the beautiful scenery of the lake.</p>
+                <button class="btn-book" onclick="alert('Congratulations! You have successfully booked the tour!')">Book Now</button>
+            </div>
+            <div class="cover">
+                <img src="../Picture/HaNoi.jpg" alt="Hanoi">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 PlayfulOuting | Liên hệ qua email: PlayfulOuting@example.com</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cấu hình chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+#logo img {
+    max-width: 150px;
+}
+
+/* NAVIGATION */
+.myNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #28a745;
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #218838;
+    border-radius: 5px;
+    color: yellow;
+}
+
+/* ICONS */
+.myNavRight {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-link {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    color: #ccc;
+}
+
+/* SECTION */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* BỐ CỤC 2 CỘT */
+.divLeft, .divRight {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.divLeft img, .divRight img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* FOOTER */
+footer {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* CAROUSEL */
+.carousel {
+    max-height: 400px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* TIÊU ĐỀ SẢN PHẨM */
+.products-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 30px 0;
+    color: #28a745;
+}
+
+/* SẢN PHẨM */
+.product {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* THẺ SẢN PHẨM */
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ẢNH SẢN PHẨM */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* NÚT MORE */
+.card-button {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card-button a {
+    display: inline-block;
+    background-color: #17a2b8;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.card-button a:hover {
+    background-color: #117a8b;
+}
+
+/* NHÓM NÚT */
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.booking-btn, .detail-btn {
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.booking-btn {
+    background-color: #28a745;
+}
+
+.detail-btn {
+    background-color: #007bff;
+}
+
+.booking-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.detail-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divLeft, .divRight {
+        max-width: 100%;
+    }
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
